@@ -15,18 +15,19 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $admin = User::create([
-            'name' => 'Admin Gudang',
-            'email' => 'admin@wms.test',
-            'password' => Hash::make('password123'),
-            'role' => 'admin',
-        ]);
+    'name' => 'Hulu',
+    'email' => 'huluaja@gmail.com',
+    'password' => Hash::make('belajarwad'),
+    'role' => 'admin',
+]);
 
-        $staff = User::create([
-            'name' => 'Staff Gudang',
-            'email' => 'staff@wms.test',
-            'password' => Hash::make('password123'),
-            'role' => 'staff',
-        ]);
+
+       $staff = User::create([
+    'name' => 'Staff Gudang',
+    'email' => 'staff@gmail.com',
+    'password' => Hash::make('staffwad123'),
+    'role' => 'staff',
+]);
 
         foreach (['Elektronik', 'Alat Tulis', 'Makanan & Minuman', 'Peralatan Rumah Tangga'] as $name) {
             Category::create(['name' => $name]);
