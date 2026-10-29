@@ -14,7 +14,7 @@ class DashboardController extends Controller
             'lowStock' => Product::whereColumn('stock', '<=', 'min_stock')->count(),
             'totalTransactions' => StockTransaction::count(),
             'recent' => StockTransaction::with(['product', 'user'])
-                ->latest()->take(5)->get(),
+                ->latest('transaction_date')->latest('id')->take(5)->get(),
         ]);
     }
 }
