@@ -15,6 +15,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a></li>
                 @if (auth()->user()->role === 'admin')
                     <li class="nav-item"><a class="nav-link" href="{{ route('categories.index') }}">Kategori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('suppliers.index') }}">Supplier</a></li>
                 @endif
             </ul>
             <div class="d-flex align-items-center gap-3 text-white">
