@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StockTransactionController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,8 +21,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    // Admin dan staff: melihat daftar produk
+    // Admin dan staff
     Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+    Route::resource('transactions', StockTransactionController::class)
+        ->only(['index', 'create', 'store']);
 
     // Hanya admin
     Route::middleware('role:admin')->group(function () {

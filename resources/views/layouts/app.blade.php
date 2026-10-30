@@ -14,6 +14,7 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('transactions.index') }}">Transaksi</a></li>
                 @if (auth()->user()->role === 'admin')
                     <li class="nav-item"><a class="nav-link" href="{{ route('categories.index') }}">Kategori</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('suppliers.index') }}">Supplier</a></li>
