@@ -3,6 +3,8 @@
 Aplikasi web manajemen inventaris gudang berbasis Laravel 12 dan MySQL.
 Dibuat untuk UAS WAD04 - Web Application Development.
 
+**Aplikasi online:** https://sistem-gudang-kita-production-owxh50.laravel.cloud/login
+
 ## Fitur
 - Autentikasi: registrasi, login, logout (session, CSRF, validasi server-side)
 - Role-based access: **admin** dan **staff**
@@ -15,7 +17,7 @@ Dibuat untuk UAS WAD04 - Web Application Development.
 Laravel 12, PHP 8.2+, MySQL, Blade, Bootstrap 5
 
 ## Instalasi Lokal
-1. `git clone https://github.com/USERNAME/wms.git`
+1. `git clone https://github.com/canisspuella-creator/wms.git`
 2. `cd wms`
 3. `composer install`
 4. `copy .env.example .env` (Windows) atau `cp .env.example .env`
@@ -35,11 +37,11 @@ Alternatif tanpa migrasi: impor file `database/wms_db.sql` ke MySQL.
 Akun ini hanya untuk keperluan penilaian.
 
 ## Hak Akses
-| Fitur               | Admin | Staff |
-|---------------------|-------|-------|
-| Dashboard           | Ya    | Ya    |
-| Lihat produk        | Ya    | Ya    |
-| Kelola produk       | Ya    | Tidak |
-| Kelola kategori     | Ya    | Tidak |
-| Kelola supplier     | Ya    | Tidak |
-| Catat transaksi stok| Ya    | Ya    |
+| Fitur                | Admin | Staff |
+|----------------------|-------|-------|
+| Dashboard            | Ya    | Ya    |
+| Lihat produk         | Ya    | Ya    |
+| Kelola produk        | Ya    | Tidak |
+| Kelola kategori      | Ya    | Tidak |
+| Kelola supplier      | Ya    | Tidak |
+| Catat transaksi stok | Ya    | Ya    |
