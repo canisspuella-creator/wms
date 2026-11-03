@@ -15,11 +15,11 @@ Dibuat untuk UAS WAD04 - Web Application Development.
 
 ## Tampilan Aplikasi
 
-![Dashboard](docs/dashboard.png)
+![Dashboard](docs/dashboard.jpg)
 
-![Daftar Produk](docs/produk.png)
+![Daftar Produk](docs/produk.jpg)
 
-![Form Transaksi](docs/transaksi.png)
+![Form Transaksi](docs/transaksi.jpg)
 
 ## Teknologi
 Laravel 12, PHP 8.2+, MySQL, Blade, Bootstrap 5
