@@ -13,6 +13,14 @@ Dibuat untuk UAS WAD04 - Web Application Development.
 - Transaksi stok barang masuk/keluar, dengan validasi stok dan pembaruan stok atomik (admin dan staff)
 - Dashboard ringkasan: total produk, stok menipis, total transaksi
 
+## Tampilan Aplikasi
+
+![Dashboard](docs/dashboard.png)
+
+![Daftar Produk](docs/produk.png)
+
+![Form Transaksi](docs/transaksi.png)
+
 ## Teknologi
 Laravel 12, PHP 8.2+, MySQL, Blade, Bootstrap 5
 
